@@ -18,20 +18,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx6-Dd-vpt">
-                                <rect key="frame" x="166" y="305" width="42" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="uHc-JT-cfb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="AeT-oE-4HZ">
+                                <rect key="frame" x="130" y="30" width="115" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Maximize your confidence before presentations with Smile. Record your presentation practice and" translatesAutoresizingMaskIntoConstraints="NO" id="ZOB-Vr-UVg">
+                                <rect key="frame" x="67" y="103" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hw-n0-h7a">
+                                <rect key="frame" x="87" y="384" width="200" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="smileNow"/>
+                                <connections>
+                                    <segue destination="VIq-jR-Uo5" kind="show" id="gFL-wN-Zds"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uHc-JT-cfb" secondAttribute="trailing" id="Wkx-TJ-xGg"/>
+                            <constraint firstItem="uHc-JT-cfb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cIL-De-c2s"/>
+                            <constraint firstItem="uHc-JT-cfb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ir6-ee-Ya7"/>
+                            <constraint firstItem="uHc-JT-cfb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nIE-wi-f3M"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GaO-He-pX0">
+            <objects>
+                <viewController id="VIq-jR-Uo5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dDb-Lz-dW4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="3Xe-4K-IkL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYX-mX-bDc">
+                                <rect key="frame" x="-3" y="620" width="380" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="HnT-AR-RER"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OJ-Ie-yAI">
+                                <rect key="frame" x="-3" y="570" width="380" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="start"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Xe-4K-IkL" firstAttribute="bottom" secondItem="vwV-oc-cJb" secondAttribute="bottom" id="OxO-t2-bjf"/>
+                            <constraint firstItem="3Xe-4K-IkL" firstAttribute="leading" secondItem="dDb-Lz-dW4" secondAttribute="leading" id="w6b-b5-ERn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vwV-oc-cJb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5U-Gi-g5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="31.934032983508249"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LOGO" width="280" height="100"/>
+        <image name="Maximize your confidence before presentations with Smile. Record your presentation practice and" width="1128" height="388"/>
+        <image name="Rectangle" width="375" height="667"/>
+        <image name="back" width="750" height="88"/>
+        <image name="smileNow" width="440" height="100"/>
+        <image name="start" width="750" height="104"/>
+    </resources>
 </document>
